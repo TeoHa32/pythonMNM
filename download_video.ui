@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>772</width>
+    <height>551</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>60</y>
+      <width>651</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="txtTitle_bar">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>491</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Tải video từ Youtube về máy</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtSearch">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>100</y>
+       <width>391</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>Tìm kiếm hoặc nhập link tại đây...</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnSearch">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>100</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>img/search.svg</normaloff>img/search.svg</iconset>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtFile">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>150</y>
+       <width>391</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Tên thư mục</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnFile">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>150</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>img/file-regular.svg</normaloff>img/file-regular.svg</iconset>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbQuality">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>240</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <item>
+      <property name="text">
+       <string>Chất lượng</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="btnDownload">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>240</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Tải xuống</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../Downloads/download-solid.svg</normaloff>../../Downloads/download-solid.svg</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnDelete">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>240</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Xóa</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../Downloads/arrows-rotate-solid.svg</normaloff>../../Downloads/arrows-rotate-solid.svg</iconset>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btnDownload_video">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Download Video</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnUpload_video">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>0</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Upload Video</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDownload_history">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>0</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Lịch sử tải video</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="btnPercent">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>460</y>
+      <width>451</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>772</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuT_i_video_t_Youtube">
+    <property name="title">
+     <string>Tải video từ Youtube</string>
+    </property>
+   </widget>
+   <addaction name="menuT_i_video_t_Youtube"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionT_i_video_n">
+   <property name="text">
+    <string>Tài video đơn</string>
+   </property>
+  </action>
+  <action name="actionT_i_theo_danh_s_ch_ph_t">
+   <property name="text">
+    <string>Tải theo danh sách phát</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

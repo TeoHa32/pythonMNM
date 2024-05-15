@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>773</width>
+    <height>551</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btnDownload_video">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Download Video</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnUpload_video">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>0</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Upload Video</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDownload_history">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>0</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Lịch sử tải video</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="btnPercent">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>450</y>
+      <width>451</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>50</y>
+      <width>571</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="txtTitle_bar">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>421</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Đăng video lên Youtube</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtFile">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>80</y>
+       <width>391</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Chọn video </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnFile">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>80</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>img/file-regular.svg</normaloff>img/file-regular.svg</iconset>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbQuality">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>340</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <item>
+      <property name="text">
+       <string>Chất lượng</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="btnUpload">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>340</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Đăng video</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>img/download-solid.svg</normaloff>img/download-solid.svg</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnDelete">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>340</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Xóa</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>img/arrows-rotate-solid.svg</normaloff>img/arrows-rotate-solid.svg</iconset>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtTitle">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>130</y>
+       <width>391</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Nhập tiêu đề</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtDes">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>180</y>
+       <width>391</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Mô tả </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtkey_word">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>230</y>
+       <width>391</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Từ khóa</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbCategory">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>280</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="currentText">
+      <string>1-Film &amp; Animation</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>1-Film &amp; Animation</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2-Autos &amp; Vehicles</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>10-Music</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>15-Pets &amp; Animals</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>17-Sports</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>18-Short Movies</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>19-Travel &amp; Events</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>20-Gaming</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>21-Videoblogging</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>22-People &amp; Blogs</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>23-Comedy</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>24-Entertainment</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>25-News &amp; Politics</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>26-Howto &amp; Style</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>27-Education</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>28-Science &amp; Technology</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>29-Nonprofits &amp; Activism</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>30-Movies</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>31-Anime/Animation</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>32-Action/Adventure</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>33-Classics</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>34-Comedy</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>35-Documentary</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>36-Drama</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>37-Family</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>38-Foreign</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>39-Horror</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>40-Sci-Fi/Fantasy</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>41-Thriller</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>42-Shorts</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>43-Shows</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>44-Trailers</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="cbStatus">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>280</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <item>
+      <property name="text">
+       <string>public</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>private</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>unlisted</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>773</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuT_i_video_t_Youtobe">
+    <property name="title">
+     <string>Tải video từ Youtobe</string>
+    </property>
+   </widget>
+   <addaction name="menuT_i_video_t_Youtobe"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
