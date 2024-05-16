@@ -68,6 +68,7 @@ class DownloadHandle(Ui_MainWindow,QObject):
             self.Info_videoHandle.txtView.setText(str(info['view_count']))
             self.Info_videoHandle.txtNameVideo.setText(info['title'])
             self.Info_videoHandle.txtlike.setText(str(info['like_count']))
+            self.Info_videoHandle.txtId.setText(info.get('id'))
             self.infoVideoUi.show()
         else:
             msg_box = QMessageBox()

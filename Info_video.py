@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'Info_video.ui'
+# Form implementation generated from reading ui file 'info_video.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.10
 #
@@ -102,15 +102,15 @@ class Ui_MainWindow(object):
 "color: rgb(0, 0, 0);")
         self.txtlike.setText("")
         self.txtlike.setObjectName("txtlike")
-        self.txtDislike = QtWidgets.QLabel(self.groupBox)
-        self.txtDislike.setGeometry(QtCore.QRect(150, 180, 361, 21))
+        self.txtId = QtWidgets.QLabel(self.groupBox)
+        self.txtId.setGeometry(QtCore.QRect(150, 180, 361, 21))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.txtDislike.setFont(font)
-        self.txtDislike.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+        self.txtId.setFont(font)
+        self.txtId.setStyleSheet("background-color: rgb(255, 255, 255);\n"
 "color: rgb(0, 0, 0);")
-        self.txtDislike.setText("")
-        self.txtDislike.setObjectName("txtDislike")
+        self.txtId.setText("")
+        self.txtId.setObjectName("txtId")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(180, 0, 191, 41))
         font = QtGui.QFont()
@@ -119,12 +119,18 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.label.setFont(font)
         self.label.setObjectName("label")
-        self.btnOk = QtWidgets.QPushButton(self.centralwidget)
-        self.btnOk.setGeometry(QtCore.QRect(460, 270, 71, 28))
+        self.btnLike = QtWidgets.QPushButton(self.centralwidget)
+        self.btnLike.setGeometry(QtCore.QRect(360, 260, 71, 28))
         font = QtGui.QFont()
         font.setPointSize(10)
-        self.btnOk.setFont(font)
-        self.btnOk.setObjectName("btnOk")
+        self.btnLike.setFont(font)
+        self.btnLike.setObjectName("btnLike")
+        self.btnDisLike = QtWidgets.QPushButton(self.centralwidget)
+        self.btnDisLike.setGeometry(QtCore.QRect(440, 260, 71, 28))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.btnDisLike.setFont(font)
+        self.btnDisLike.setObjectName("btnDisLike")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 540, 26))
@@ -145,9 +151,10 @@ class Ui_MainWindow(object):
         self.label_4.setText(_translate("MainWindow", "Người đăng:"))
         self.label_11.setText(_translate("MainWindow", "Lượt xem: "))
         self.label_12.setText(_translate("MainWindow", "Lượt like:"))
-        self.label_13.setText(_translate("MainWindow", "Lượt dislike: "))
+        self.label_13.setText(_translate("MainWindow", "ID"))
         self.label.setText(_translate("MainWindow", "Thông tin video "))
-        self.btnOk.setText(_translate("MainWindow", "OK"))
+        self.btnLike.setText(_translate("MainWindow", "LIKE"))
+        self.btnDisLike.setText(_translate("MainWindow", "DISLIKE"))
 
 
 if __name__ == "__main__":

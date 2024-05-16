@@ -1,5 +1,5 @@
 
-from Upload_video import Ui_MainWindow
+from upload_video import Ui_MainWindow
 from PyQt5.QtWidgets import QMessageBox
 from PyQt5.QtWidgets import QApplication, QMainWindow,QLabel,QVBoxLayout,QPushButton,QDialog,QFileDialog,QMessageBox
 from PyQt5.QtCore import QTimer,QObject
