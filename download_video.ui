@@ -201,6 +201,29 @@
        <normaloff>../../Downloads/arrows-rotate-solid.svg</normaloff>../../Downloads/arrows-rotate-solid.svg</iconset>
      </property>
     </widget>
+    <widget class="QPushButton" name="bInfo">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>100</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>img/search.svg</normaloff>img/search.svg</iconset>
+     </property>
+    </widget>
    </widget>
    <widget class="QPushButton" name="btnDownload_video">
     <property name="geometry">

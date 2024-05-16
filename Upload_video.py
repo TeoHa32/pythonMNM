@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'Upload_video.ui'
+# Form implementation generated from reading ui file 'upload_video.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.10
 #
@@ -35,10 +35,6 @@ class Ui_MainWindow(object):
         font.setPointSize(14)
         self.btnDownload_history.setFont(font)
         self.btnDownload_history.setObjectName("btnDownload_history")
-        self.btnPercent = QtWidgets.QProgressBar(self.centralwidget)
-        self.btnPercent.setGeometry(QtCore.QRect(160, 450, 451, 23))
-        self.btnPercent.setProperty("value", 24)
-        self.btnPercent.setObjectName("btnPercent")
         self.groupBox_2 = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox_2.setGeometry(QtCore.QRect(100, 50, 571, 401))
         self.groupBox_2.setLayoutDirection(QtCore.Qt.RightToLeft)
@@ -67,16 +63,8 @@ class Ui_MainWindow(object):
         icon.addPixmap(QtGui.QPixmap("img/file-regular.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btnFile.setIcon(icon)
         self.btnFile.setObjectName("btnFile")
-        self.cbQuality = QtWidgets.QComboBox(self.groupBox_2)
-        self.cbQuality.setGeometry(QtCore.QRect(180, 340, 161, 31))
-        font = QtGui.QFont()
-        font.setPointSize(10)
-        self.cbQuality.setFont(font)
-        self.cbQuality.setLayoutDirection(QtCore.Qt.LeftToRight)
-        self.cbQuality.setObjectName("cbQuality")
-        self.cbQuality.addItem("")
         self.btnUpload = QtWidgets.QPushButton(self.groupBox_2)
-        self.btnUpload.setGeometry(QtCore.QRect(370, 340, 121, 31))
+        self.btnUpload.setGeometry(QtCore.QRect(360, 340, 121, 31))
         font = QtGui.QFont()
         font.setPointSize(10)
         self.btnUpload.setFont(font)
@@ -85,7 +73,7 @@ class Ui_MainWindow(object):
         self.btnUpload.setIcon(icon1)
         self.btnUpload.setObjectName("btnUpload")
         self.btnDelete = QtWidgets.QPushButton(self.groupBox_2)
-        self.btnDelete.setGeometry(QtCore.QRect(80, 340, 71, 31))
+        self.btnDelete.setGeometry(QtCore.QRect(90, 340, 71, 31))
         font = QtGui.QFont()
         font.setPointSize(10)
         self.btnDelete.setFont(font)
@@ -189,7 +177,6 @@ class Ui_MainWindow(object):
         self.btnDownload_history.setText(_translate("MainWindow", "Lịch sử tải video"))
         self.txtTitle_bar.setText(_translate("MainWindow", "Đăng video lên Youtube"))
         self.txtFile.setPlaceholderText(_translate("MainWindow", "Chọn video "))
-        self.cbQuality.setItemText(0, _translate("MainWindow", "Chất lượng"))
         self.btnUpload.setText(_translate("MainWindow", "Đăng video"))
         self.btnDelete.setText(_translate("MainWindow", "Xóa"))
         self.txtTitle.setPlaceholderText(_translate("MainWindow", "Nhập tiêu đề"))

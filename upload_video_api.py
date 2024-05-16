@@ -141,7 +141,6 @@ def resumable_upload(insert_request):
         raise
     except RETRIABLE_EXCEPTIONS as e:
       error = "A retriable error occurred: %s" % e
-
     if error is not None:
       print (error)
       retry += 1
