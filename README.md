@@ -1,4 +1,5 @@
-![image](https://github.com/TeoHa32/pythonMNM/assets/127963699/dd5471a1-d743-430f-b2d8-2359906be805)GIỚI THIỆU:
+
+GIỚI THIỆU:
 TOOL VIDEO (youtube)
 Phần mềm download video từ YouTube là một ứng dụng được thiết kế để giúp người dùng tải xuống các video từ nền tảng chia sẻ video hàng đầu thế giới YouTube. Đề tài này tập trung vào việc phát triển một phần mềm đặc biệt cho việc tải xuống video từ YouTube, cho phép người dùng thuận tiện và nhanh chóng lưu trữ các video yêu thích trên máy tính. Ngoài ra người  dùng cũng có thể lấy video từ máy đăng tải lên youtube.
 Link github : https://github.com/TeoHa32/pythonMNM.git
@@ -33,7 +34,7 @@ CÁCH CÀI ĐẶT
 
 THỰC THI CHƯƠNG TRÌNH
 - Mở terminal và gõ lệnh python3 run.py và nhận Enter, phần mềm sẽ được thực thi.
-
+![image](https://github.com/TeoHa32/pythonMNM/assets/127963699/dd5471a1-d743-430f-b2d8-2359906be805)
 
 
 
